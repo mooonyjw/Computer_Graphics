@@ -48,14 +48,14 @@ def main():
         th = glfw.get_time()
 
         # rotation
-        R = np.array([[np.cos(th), -np.sin(th), 0.],
-                      [np.sin(th), np.cos(th),  0.],
-                      [0.,         0.,          1.]])
+        R = np.array(  [[np.cos(th), -np.sin(th), 0.],
+                        [np.sin(th), np.cos(th),  0.],
+                        [0.,         0.,          1.]])
 
         # translate by (.5, 0.)
-        T = np.array([[1.,0.,0.5],
-                      [0.,1.,0.],
-                      [0.,0.,1.]])
+        T = np.array(  [[1.,0.,0.5],
+                        [0.,1.,0.],
+                        [0.,0.,1.]])
         
         render(R @ T)
         

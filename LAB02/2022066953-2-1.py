@@ -68,7 +68,7 @@ def main():
         
         # Swap front and back buffers
         glfw.swap_buffers(window)
-     
+    
     glfw.terminate()
 
 if __name__ == "__main__":
